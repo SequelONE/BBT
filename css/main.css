@@ -1,0 +1,146 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	width: 100%;
+}
+body {
+	width: 100%;
+	background: #8fc2db;
+}
+body.canvas-sliding, body.canvas-slid {left: auto !important;}
+header ul.bxslider {
+	margin-top: 25px;
+}
+.leftpanel {
+    width: 100px;
+    background: #fff;
+    height: 1094px;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 0;
+}
+nav {
+    height:50px;
+}
+.navbar-default {
+    background-color: #563e7d;
+    border: none;
+}
+.navbar-default .navbar-brand {
+    color: #fff;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+}
+.navbar-default .navbar-nav>li>a:hover {
+    color: #555;
+    background-color: #fff;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #555;
+    background-color: #fff;
+}
+.navmenu-default, .navbar-default .navbar-offcanvas {
+    background-color: #563e7d;
+    border-color: #e7e7e7;
+}
+.navbar {
+	border-radius: 0;
+}
+.navbar-nav {
+    margin: 0;
+}
+.navbar-nav li.close {
+	color: #000;
+	background: #fff;
+}
+.navmenu-fixed-right {
+    left: auto !important;
+}
+.block {
+	margin-bottom: 25px;
+}
+.blocks {
+	margin: 20px 0;
+	color: #000;
+}
+.blocks .block-info a {
+	color: #000;
+}
+.block-bg {
+	background: #fff;
+	border-radius: 5px;
+	border: 5px solid #fff;
+}
+.block-bg:hover {
+	background: #fff;
+	border-radius: 5px;
+	border: 5px solid #563e7d;
+}
+.block-bg .block-preview,  .block-bg .block-info{
+	padding: 15px;
+}
+.block-bg .block-preview p a{
+	color: #563e7d;
+	font-weight: normal;
+	font-size: 22px;
+}
+.content {
+	background: #fff;
+	padding: 20px;
+	border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    position:relative;
+	margin-top: 25px;
+}
+.footer .blocks {
+	background: #fff;
+	border-radius: 5px;
+	padding: 25px;
+}
+.footer .blocks .footnav ul li {
+	list-style: none;
+}
+.footer .blocks .footnav ul li a {
+	color: #000;
+	text-decoration: underline;
+}
+.footer .blocks .footnav ul li a:hover {
+	color: #000;
+	text-decoration: none;
+}
+.footer .blocks .counter {
+	text-align: center;
+}
+.footer-animate-bg { 
+    width: 100%; 
+    height: 100px; 
+    background: url('../img/bg-clouds.png');
+    background-position: 0 0;
+    background-repeat: repeat-x;
+	
+    animation: animatedBackground 40s linear infinite;
+}
+.scrolltop {
+	position: fixed;
+    right: 50px;
+    bottom: 25px;
+}
+.scrolltop a i {
+	color: #fff;
+	font-size: 32px;
+	border: 1px solid #563e7d;
+	background: #563e7d;
+	padding: 5px;
+	border-radius: 5px;
+}
+@keyframes animatedBackground {
+    from { background-position: 0 0; }
+    to { background-position: 100% 0; }
+}
