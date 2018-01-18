@@ -25,6 +25,9 @@ header ul.bxslider {
 nav {
     height:50px;
 }
+p.node {
+	text-align: center;
+}
 .navbar-default {
     background-color: #563e7d;
     border: none;
@@ -93,7 +96,14 @@ nav {
 	padding: 20px;
 	border-radius: 5px;
 }
-
+.comingsoon {
+	background: #fff;
+	padding: 20px;
+	border-radius: 5px;
+	text-align: center;
+	margin-top: 100px;
+	position: relative;
+}
 /* Footer */
 footer {
     position:relative;

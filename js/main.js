@@ -50,6 +50,37 @@ jQuery(document).ready(function(){
 });
 jQuery(function () {
 	
+	var note = jQuery('.note'),
+		ts = new Date(2019, 0, 1),
+		newYear = true;
+	
+	if((new Date()) > ts){
+		ts = (new Date()).getTime() + 10*24*60*60*1000;
+		newYear = false;
+	}
+		
+	jQuery('.countdown').countdown({
+		timestamp	: ts,
+		callback	: function(days, hours, minutes, seconds){
+			
+			var message = "";
+			
+			message += "Дней: " + days +", ";
+			message += "часов: " + hours + ", ";
+			message += "минут: " + minutes + " и ";
+			message += "секунд: " + seconds + " <br />";
+			
+			if(newYear){
+				message += "До открытия сайта осталось!";
+			}
+			else {
+				message += "осталось до момента через 10 дней!";
+			}
+			
+			note.html(message);
+		}
+	});
+	
     jQuery("[data-time]").each(function (i, e) {
         jQuery(this).html(moment($(this).data('time'), "YYYY-MM-DD HH:mm:ss").fromNow());
     })
